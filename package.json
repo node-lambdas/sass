@@ -1,0 +1,7 @@
+{
+  "name": "@node-lambdas/sass",
+  "private": true,
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
