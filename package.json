@@ -4,6 +4,6 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "node-sass": "^8.0.0"
+    "sass": "^1.6.0"
   }
 }
