@@ -7,8 +7,12 @@ export default {
       input: 'text',
       output: 'text',
       handler: async function (input, output) {
-        const result = sass.renderSync({ data: await input.asText() });
-        output.sendText(200, result.css.toString());
+        try {
+          const result = sass.renderSync({ data: await input.asText() });
+          output.sendText(200, result.css.toString());
+        } catch (e) {
+          output.reject(e);
+        }
       }
     }
   }
